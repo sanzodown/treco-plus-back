@@ -1,0 +1,18 @@
+Query:
+  type: object
+  config:
+    fields:
+      viewer:
+        access: '@=isAuthenticated()'
+        type: User!
+        description: The currently authenticated user.
+        resolve: '@=getUser()'
+      node:
+        builder: "Relay::Node"
+        builderConfig:
+          nodeInterfaceType: Node
+          idFetcher: '@=resolver("App\\GraphQL\\Resolver\\GlobalIdResolver", [value])'
+      viewerTeams:
+        description: 'Get the list of viewer teams'
+        type: '[Team]'
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\ViewerTeamsResolver", [args, getUser()])'

@@ -1,0 +1,15 @@
+App\Entity\Category:
+  category1:
+    name: 'To do'
+    position: 1
+    tickets: ['@ticket1','@ticket2']
+  category2:
+    name: 'In progress'
+    position: 2
+  category3:
+    name: 'Done'
+    position: 3
+  category1b2:
+    name: 'To do'
+    position: 1
+    tickets: ['@ticket1b2']

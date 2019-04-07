@@ -1,0 +1,7 @@
+login:
+  path: /get_token
+  methods: [POST]
+
+refresh_token:
+  path:     /refresh_token
+  controller: gesdinet.jwtrefreshtoken::refresh

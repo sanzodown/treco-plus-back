@@ -1,0 +1,13 @@
+Mutation:
+  type: object
+  config:
+    name: Mutation
+    fields:
+      loginUser:
+        description: 'Log the user'
+        access: "@=isAnonymous()"
+        builder: 'Relay::Mutation'
+        builderConfig:
+          inputType: LoginUserInput
+          payloadType: LoginUserPayload
+          mutateAndGetPayload: '@=mutation("App\\GraphQL\\Mutation\\User\\LoginUserMutation", [value])'

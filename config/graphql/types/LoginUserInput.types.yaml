@@ -1,0 +1,11 @@
+LoginUserInput:
+  type: relay-mutation-input
+  config:
+    description: 'Input of loginUser mutation'
+    fields:
+      email:
+        type: 'String!'
+        description: 'I am the email description'
+      password:
+        type: 'String!'
+        description: 'I am the password description'

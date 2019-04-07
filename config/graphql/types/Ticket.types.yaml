@@ -1,0 +1,25 @@
+Ticket:
+  type: object
+  inherits: ['Node']
+  config:
+    name: Ticket
+    interfaces: ['Node']
+    fields:
+      id:
+        type: 'ID!'
+      name:
+        type: 'String!'
+      content:
+        type: 'String'
+      position:
+        type: 'Int!'
+      priority:
+        type: 'Int'
+      author:
+        type: 'User!'
+      endDate:
+        type: 'DateTime'
+      category:
+        type: 'Category!'
+      completion:
+        type: 'Int'

@@ -1,0 +1,11 @@
+LoginUserPayload:
+  type: relay-mutation-payload
+  config:
+    description: 'Payload of loginUser mutation'
+    fields:
+      token:
+        type: 'String!'
+        description: 'The JWT token associated to the successfully logged in user'
+      refreshToken:
+        type: 'String!'
+        description: 'The refresh token associated to the successfully logged in user'

@@ -1,0 +1,17 @@
+Category:
+  type: object
+  inherits: ['Node']
+  config:
+    name: Category
+    interfaces: ['Node']
+    fields:
+      id:
+        type: 'ID!'
+      name:
+        type: 'String!'
+      tickets:
+        type: '[Ticket]'
+      board:
+        type: 'Board!'
+      position:
+        type: 'Int!'

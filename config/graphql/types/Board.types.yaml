@@ -1,0 +1,16 @@
+Board:
+  type: object
+  inherits: ['Node']
+  config:
+    name: Board
+    interfaces: ['Node']
+    description: 'I am the Board description!'
+    fields:
+      id:
+        type: 'ID!'
+      name:
+        type: 'String!'
+      categories:
+        type: '[Category]'
+      team:
+        type: 'Team!'

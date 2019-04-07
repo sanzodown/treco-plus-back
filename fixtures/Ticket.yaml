@@ -1,6 +1,25 @@
-App\Entity\User:
-  user{1..10}:
-    username: '<username()>'
-    email: '<email()>'
-    plainPassword: 'test'
-    team: '50%? <numberBetween(1, 200)>'
+App\Entity\Ticket:
+  ticket1:
+    name: 'Create the BO'
+    content: '<text(75)>'
+    priority: 1
+    position: 1
+    author: '@userOwner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 0
+  ticket2:
+    name: 'Add Front-end'
+    content: '<text(75)>'
+    priority: 2
+    position: 2
+    author: '@user1'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 50
+  ticket1b2:
+    name: 'Do some stuff...'
+    content: '<text(75)>'
+    priority: 1
+    position: 1
+    author: '@userOwner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 0

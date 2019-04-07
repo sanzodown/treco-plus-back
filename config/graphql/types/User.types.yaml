@@ -1,0 +1,17 @@
+User:
+  type: object
+  inherits: [Node]
+  config:
+    name: User
+    interfaces: ['Node']
+    fields:
+      id:
+        type: 'ID!'
+      username:
+        type: 'String!'
+      email:
+        type: 'String!'
+      tickets:
+        type: '[Ticket]'
+      teams:
+        type: '[Team]'

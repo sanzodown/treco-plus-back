@@ -84,6 +84,9 @@
     "fzaninotto/faker": {
         "version": "v1.8.0"
     },
+    "gesdinet/jwt-refresh-token-bundle": {
+        "version": "v0.6.2"
+    },
     "hautelook/alice-bundle": {
         "version": "2.1",
         "recipe": {
@@ -101,11 +104,29 @@
     "jdorn/sql-formatter": {
         "version": "v1.2.17"
     },
+    "lcobucci/jwt": {
+        "version": "3.2.5"
+    },
+    "lexik/jwt-authentication-bundle": {
+        "version": "2.5",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "2.5",
+            "ref": "509b1542f3180a1cfe248ade8b7bf5092c2d4127"
+        },
+        "files": [
+            "./config/packages/lexik_jwt_authentication.yaml"
+        ]
+    },
     "liinkiing/graphql-maker-bundle": {
-        "version": "1.0.1"
+        "version": "1.1.0"
     },
     "myclabs/deep-copy": {
         "version": "1.8.1"
+    },
+    "namshi/jose": {
+        "version": "7.2.3"
     },
     "nelmio/alice": {
         "version": "3.2",
@@ -283,6 +304,9 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.11.0"
     },
+    "symfony/polyfill-php72": {
+        "version": "v1.11.0"
+    },
     "symfony/property-access": {
         "version": "v4.2.5"
     },
@@ -344,6 +368,21 @@
             "./config/routes/dev/twig.yaml",
             "./templates/base.html.twig"
         ]
+    },
+    "symfony/validator": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.1",
+            "ref": "0cdc982334f45d554957a6167e030482795bf9d7"
+        },
+        "files": [
+            "./config/packages/validator.yaml"
+        ]
+    },
+    "symfony/var-dumper": {
+        "version": "v4.2.5"
     },
     "symfony/var-exporter": {
         "version": "v4.2.5"
