@@ -1,0 +1,6 @@
+App\Entity\Team:
+  team{1..10}:
+    name: '<text(30)>'
+    description: '<text(300)>'
+    plainPassword: 'test'
+    team: '50%? <numberBetween(1, 200)>'

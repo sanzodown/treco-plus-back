@@ -1,0 +1,6 @@
+App\Entity\User:
+  user{1..10}:
+    username: '<username()>'
+    email: '<email()>'
+    plainPassword: 'test'
+    team: '50%? <numberBetween(1, 200)>'
