@@ -1,0 +1,11 @@
+RegisterUserPayload:
+  type: relay-mutation-payload
+  config:
+    description: 'Payload of registerUser mutation'
+    fields:
+      token:
+        type: 'String!'
+        description: 'I am the token description'
+      refreshToken:
+        type: 'String!'
+        description: 'I am the refreshToken description'

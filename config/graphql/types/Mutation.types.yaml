@@ -11,3 +11,10 @@ Mutation:
           inputType: LoginUserInput
           payloadType: LoginUserPayload
           mutateAndGetPayload: '@=mutation("App\\GraphQL\\Mutation\\User\\LoginUserMutation", [value])'
+      registerUser:
+        description: 'I am the registerUser description'
+        builder: 'Relay::Mutation'
+        builderConfig:
+          inputType: RegisterUserInput
+          payloadType: RegisterUserPayload
+          mutateAndGetPayload: '@=mutation("App\\GraphQL\\Mutation\\RegisterUserMutation", [value])'

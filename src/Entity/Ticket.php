@@ -61,7 +61,7 @@ class Ticket
      */
     private $category;
 
-    public function getId(): ?int
+    public function getId(): ?string
     {
         return $this->id;
     }

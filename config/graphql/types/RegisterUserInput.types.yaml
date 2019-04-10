@@ -1,0 +1,14 @@
+RegisterUserInput:
+  type: relay-mutation-input
+  config:
+    description: 'Input of registerUser mutation'
+    fields:
+      email:
+        type: 'String!'
+        description: 'I am the email description'
+      password:
+        type: 'String!'
+        description: 'I am the password description'
+      username:
+        type: 'String!'
+        description: 'I am the username description'
