@@ -16,3 +16,10 @@ Query:
         description: 'Get the list of viewer teams'
         type: '[Team]'
         resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\ViewerTeamsResolver", [args, getUser()])'
+      teamBoards:
+        description: 'Get the list of boards belonging to a team'
+        type: '[Board]'
+        resolve: '@=resolver("App\\GraphQL\\Resolver\\Query\\TeamBoardsResolver", [args, getUser()])'
+        args:
+          teamId:
+            type: ID!
