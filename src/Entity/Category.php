@@ -27,12 +27,12 @@ class Category
     private $name;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Ticket", mappedBy="refColumn", orphanRemoval=true)
+     * @ORM\OneToMany(targetEntity="App\Entity\Ticket", mappedBy="category", orphanRemoval=true)
      */
     private $tickets;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Board", inversedBy="columns")
+     * @ORM\ManyToOne(targetEntity="App\Entity\Board", inversedBy="categories")
      */
     private $board;
 

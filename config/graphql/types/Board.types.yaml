@@ -11,6 +11,6 @@ Board:
       name:
         type: 'String!'
       categories:
-        type: '[Category]'
+        type: '[Category!]!'
       team:
         type: 'Team!'

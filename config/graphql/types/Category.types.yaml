@@ -10,7 +10,7 @@ Category:
       name:
         type: 'String!'
       tickets:
-        type: '[Ticket]'
+        type: '[Ticket!]!'
       board:
         type: 'Board!'
       position:

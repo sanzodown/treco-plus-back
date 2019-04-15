@@ -12,6 +12,6 @@ User:
       email:
         type: 'String!'
       tickets:
-        type: '[Ticket]'
+        type: '[Ticket!]!'
       teams:
-        type: '[Team]'
+        type: '[Team!]!'

@@ -8,7 +8,7 @@ Team:
       id:
         type: 'ID!'
       members:
-        type: '[User]!'
+        type: '[User!]!'
       name:
         type: 'String!'
       description:
@@ -16,4 +16,4 @@ Team:
       owner:
         type: 'User!'
       boards:
-        type: '[Board]'
+        type: '[Board!]!'
